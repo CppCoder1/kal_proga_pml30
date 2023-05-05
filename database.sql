@@ -1,0 +1,15 @@
+DROP DATABASE IF EXISTS dbname;
+
+CREATE DATABASE dbname;
+
+USE dbname;
+
+CREATE TABLE player
+(
+    id INT NOT NULL AUTO_INCREMENT,
+    login TEXT NOT NULL,
+    race INT NOT NULL DEFAULT 0,
+    score INT NOT NULL DEFAULT 0,
+    PRIMARY KEY(id),
+    UNIQUE(login(200))
+);
